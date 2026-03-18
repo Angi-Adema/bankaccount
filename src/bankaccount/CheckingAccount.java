@@ -25,6 +25,7 @@ public class CheckingAccount extends BankAccount {
 			
 			// Print new current balance.
 			System.out.printf("Current Balance: $%.2f%n", getBalance());
+			System.out.println();
 			
 		} else {
 			System.out.println("Please enter an amount greater than zero.");
@@ -44,5 +45,6 @@ public class CheckingAccount extends BankAccount {
 	public void displayAccount() {
 		accountSummary();
 		System.out.printf("Interest Rate: %.2f%%%n", interestRate);
+		System.out.println();
 	}
 }
