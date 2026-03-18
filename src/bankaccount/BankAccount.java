@@ -15,15 +15,27 @@ public class BankAccount {
 	
 	// Deposit method accepting single double value.
 	public void deposit(double amount) {
-		balance = balance + amount;
+		
+		// Ensure deposit funds are greater than 0.
+		if (amount > 0) {
+			balance = balance + amount;
+		} else {
+			System.out.println("Please enter an amount greater than zero.");
+		}
 	}
 	
 	// Withdrawal method accepting single double value.
 	public void withdrawal(double amount) {
-		balance = balance - amount;
+		
+		// Ensure withdrawal amount is greater than zero.
+		if (amount > 0) {
+			balance = balance - amount;
+		} else {
+			System.out.println("Please enter an amount greater than zero.");
+		}
 	}
 	
-	// Setters and Getters
+	// Getters and Setters
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
