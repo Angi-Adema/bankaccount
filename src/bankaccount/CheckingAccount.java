@@ -31,8 +31,18 @@ public class CheckingAccount extends BankAccount {
 		}
 	}
 	
+	// Getters and Setters
+	public void setInterestRate(double interestRate) {
+		this.interestRate = interestRate;
+	}
+	
+	public double getInterestRate() {
+		return interestRate;
+	}
+	
 	// Method to display account information from superclass including interest rate.
 	public void displayAccount() {
-		
+		accountSummary();
+		System.out.printf("Interest Rate: %.2f%%%n", interestRate);
 	}
 }
