@@ -60,7 +60,11 @@ public class BankAccount {
 		return accountID;
 	}
 	
-	// Getter to return balance
+	// Get and Set the balance.
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+	
 	public double getBalance() {
 		return balance;
 	}
