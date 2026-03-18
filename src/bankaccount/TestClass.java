@@ -68,9 +68,6 @@ public class TestClass {
 		checking1.processWithdrawal(525.00);
 		
 		// Print the result.
-		checking1.displayAccount();
-		
-
-		
+		checking1.displayAccount();	
 	}
 }
