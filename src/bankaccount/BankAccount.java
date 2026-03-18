@@ -8,8 +8,16 @@ public class BankAccount {
 	private int accountID;
 	private double balance;
 	
-	// Constructor that initializes balance to 0.
+	// No arguments constructor.
 	public BankAccount() {
+		
+	}
+	
+	// Parameterized constructor.
+	public BankAccount(String firstName, String lastName, int accountID) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.accountID = accountID;
 		balance = 0.0;
 	}
 	
