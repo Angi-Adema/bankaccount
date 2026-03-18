@@ -8,11 +8,6 @@ public class BankAccount {
 	private int accountID;
 	private double balance;
 	
-	// No arguments constructor.
-	public BankAccount() {
-		
-	}
-	
 	// Parameterized constructor.
 	public BankAccount(String firstName, String lastName, int accountID) {
 		this.firstName = firstName;
